@@ -6,12 +6,13 @@
 @Title: Calculate Distance between of x and y co-ordinate from origin
 '''
 import math
+import sys
 
 x1=0
 x2=0
 
-x2=int(input("Enter x co-ordinate"))
-y2=int(input("Enter y co-ordinate"))
+x2=(sys.argv[1])
+y2=(sys.argv[2])
 
 Distance= math.sqrt((x2 * x2) * (y2 * y2))
 print("Distance Between two co-ordinates is : ", Distance)
